@@ -117,7 +117,7 @@ function loadScript() {
 function initialize() {
     var mapOptions = {
       zoom: 12,
-      center: new google.maps.LatLng(16.8251789,96.1439764)
+      center: new google.maps.LatLng(-3.709476,-38.556107)
     };
     var map = new google.maps.Map(document.getElementById('templatemo_map'),  mapOptions);
 }
