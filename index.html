@@ -1,570 +1,446 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> 
-<![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> 
-<![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="pt-BR">
 <head>
-
-	<title>Concept HTML5 Layout</title>
-    <meta name="keywords" content="" />
-	<meta name="description" content="" />
-<!-- 
-Concept Template 
-http://www.templatemo.com/tm-397-concept 
--->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
-
-	<!-- CSS Bootstrap & Custom -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo_misc.css">
-
-	<!-- Main CSS -->
-	<link rel="stylesheet" href="css/templatemo_style.css">
-
-	<!-- Favicons -->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glipearte - Arte e Decoração | Transformando Momentos Especiais</title>
+    <meta name="description" content="Transformamos momentos especiais em memórias inesquecíveis com decorações personalizadas e kits de festa únicos">
+    <meta name="keywords" content="decoração de festas, kits de festa, glicerina, lembrancinhas, personalizados">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" as="script">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/3d-components.css">
+    <link rel="stylesheet" href="css/fixes.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 </head>
+
 <body>
-	
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-3d-container">
+                    <div class="logo-3d">
+                        <span class="logo-text">G</span>
+                        <span class="logo-particles"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="loading-text">
+                <h3>Preparando mágica...</h3>
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div class="site-header">
-		<div class="main-navigation">
-			<div class="responsive_menu">
-				<ul>
-					<li><a class="show-1 templatemo_home" href="index.html">Galeria</a></li>
-					<li><a class="show-2 templatemo_page2" href="#">Portfólio</a></li>
-					<li><a class="show-3 templatemo_page3" href="#">Serviços</a></li>
-					<li><a class="show-4 templatemo_page4" href="#">Quem Somos</a></li>
-					<li><a class="show-5 templatemo_page5" href="#">Contato</a></li>
-				</ul>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 responsive-menu">
-						<a href="#" class="menu-toggle-btn">
-				            <i class="fa fa-bars"></i>
-				        </a>
-					</div> <!-- /.col-md-12 -->
-					<div class="col-md-12 main_menu">
-						<ul>
-							<li><a class="show-1 templatemo_home" href="index.htm">Galeria</a></li>
-							<li><a class="show-2 templatemo_page2" href="#">Portfólio</a></li>
-							<li><a class="show-3 templatemo_page3" href="#">Serviços</a></li>
-							<li><a class="show-4 templatemo_page4" href="#">Quem Somos</a></li>
-							<li><a class="show-5 templatemo_page5" href="#">Contato</a></li>
-						</ul>
-					</div> <!-- /.col-md-12 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</div> <!-- /.main-navigation -->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<a href="#" class="templatemo_logo">
-						<h1>Glipearte</h1>
-					</a> <!-- /.logo -->
-				</div> <!-- /.col-md-12 -->
-			</div> <!-- /.row -->
-		</div> <!-- /.container -->
-	</div> <!-- /.site-header -->
-	
-	<div id="menu-container">
+    <!-- 3D Background -->
+    <div id="threejs-background" class="threejs-background"></div>
 
-		<div class="content homepage" id="menu-1">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-2 col-sm-6 col-md-offset-1">
-						<div class="gallery-item">
-								<img src="images/gallery/gallery-item1.jpg" alt="image 1">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item1.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-							<div class="content-gallery">
-								<h3>Ano Novo 2025-2026</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item2.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item2.jpg" alt="image 2">
-							</div>
-							<div class="content-gallery">
-								<h3>Aniversário Felício</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item3.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item3.jpg" alt="image 3">
-							</div>
-							<div class="content-gallery">
-								<h3>Aniversário Dona Vera</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item4.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item4.jpg" alt="image 4">
-							</div>
-							<div class="content-gallery">
-								<h3>Ano Novo 2024-2025</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item5.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item5.jpg" alt="image 5">
-							</div>
-							<div class="content-gallery">
-								<h3>Aniversário Paulinha</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6 col-md-offset-2">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item6.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item6.jpg" alt="image 6">
-							</div>
-							<div class="content-gallery">
-								<h3>Batizado Aurora Maria</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item7.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item7.jpg" alt="image 7">
-							</div>
-							<div class="content-gallery">
-								<h3>Aniversário Yasmin</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item8.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item8.jpg" alt="image 8">
-							</div>
-							<div class="content-gallery">
-								<h3>Natal 2024</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item9.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item9.jpg" alt="image 9">
-							</div>
-							<div class="content-gallery">
-								<h3>Arraial da Comunidade Yeshuá</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6 col-md-offset-3">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item10.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item10.jpg" alt="image 10">
-							</div>
-							<div class="content-gallery">
-								<h3>Natal da Comunidade Yeshuá</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item11.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item11.jpg" alt="image 11">
-							</div>
-							<div class="content-gallery">
-								<h3>Aniversário Dona Benedita</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item12.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item12.jpg" alt="image 12">
-							</div>
-							<div class="content-gallery">
-								<h3>Decoração Mini Kit Natalino</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.slide-item -->
-		</div> <!-- /.homepage -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home" data-aos="fade-down">
+                <div class="brand-3d">
+                    <span class="brand-text">Glipearte</span>
+                    <span class="brand-glow"></span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+                <span class="close-icon">×</span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" data-aos="fade-down" data-aos-delay="100">
+                            <span class="nav-text">Início</span>
+                            <span class="nav-hover-effect"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery" data-aos="fade-down" data-aos-delay="200">
+                            <span class="nav-text">Galeria</span>
+                            <span class="nav-hover-effect"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kits" data-aos="fade-down" data-aos-delay="300">
+                            <span class="nav-text">Nossos Kits</span>
+                            <span class="nav-hover-effect"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-aos="fade-down" data-aos-delay="400">
+                            <span class="nav-text">Sobre</span>
+                            <span class="nav-hover-effect"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-aos="fade-down" data-aos-delay="500">
+                            <span class="nav-text">Contato</span>
+                            <span class="nav-hover-effect"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-		<div class="content products" id="menu-2">
-			<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-sm-6">
-							<div class="product-item">
-								<img src="images/products/kit-basico.jpg" alt="Kit Básico">
-								<a href="#" class="product-title">Kit Básico</a>
-								<p>1 painel redondo 50cm com tema da festa</p>
-                                                                <p>1 jarro com bucha</p>
-                                                                <p>1 boleira</p>
-								<p>3 bandejas</p>
-								<p>1 display de mesa</p>
-								<br><br>
-								<p><strong>Não acompanha mesa</strong></p>
-								<p><strong>Entrega, montagem e devolução por conta do cliente</strong></p>
-
-																
-							</div> 
-							<!-- /.product-item -->
-						</div> <!-- /.col-md-4 -->
-						<div class="col-md-4 col-sm-6">
-							<div class="product-item">
-								<img src="images/products/kit-charme.jpg" alt="Kit Charme">
-								<a href="#" class="product-title">Kit Charme</a>
-								<p>1 painel redondo 50cm com tema da festa</p>
-								<p>1 mini arco de balões</p>
-                                                                <p>1 jarro com flores</p>
-                                                                <p>1 boleira</p>
-								<p>3 bandejas</p>
-								<p>2 displays de mesa</p>
-								<br>
-								<p><strong>Não acompanha mesa</strong></p>
-								<p><strong>Entrega, montagem e devolução por conta do cliente</strong></p>
-
-							</div> 
-							<!-- /.product-item -->
-						</div> <!-- /.col-md-4 -->
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-particles" id="hero-particles"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="hero-badge">
+                            <span class="badge-3d">✨ Especialistas em Momentos Mágicos</span>
+                        </div>
                         
-						<div class="col-md-4 col-sm-6">
-							<div class="product-item">
-								<img src="images/products/kit-encanto.jpg" alt="Kit Encanto">
-								<a href="#" class="product-title">Kit Encanto</a>
-								<p>1 painel redondo 50cm com tema da festa</p>
-								<p>1 mini arco de balões</p>
-                                                                <p>1 jarro com flores</p>
-                                                                <p>1 boleira</p>
-								<p>3 bandejas</p>
-								<p>2 displays de mesa</p>
-								<p>1 mesa cavalete</p>
-								<br>
-								<p><strong>Entrega, montagem e devolução por conta do cliente</strong></p>
-							</div> 
-							<!-- /.product-item -->
-						</div> <!-- /.col-md-4 -->
-						<div class="col-md-4 col-sm-6">
-							<div class="product-item">
-								<img src="images/products/kit-elegance.jpg" alt="Kit Elegance">
-								<a href="#" class="product-title">Kit Elegance</a>
-								<p>1 painel redondo 50cm com tema da festa</p>
-								<p>1 mini arco de balões</p>
-                                                                <p>1 jarro com flores</p>
-                                                                <p>1 boleira</p>
-								<p>3 bandejas</p>
-								<p>2 displays de mesa</p>
-								<p>1 mesa cavalete com balões</p>
-								<p>1 escadinha para lembranças</p>
-								<p>1 tapete</p>
-								<br>
-								<p><strong>Entrega, montagem e devolução por conta do cliente</strong></p>
-							</div> <!-- /.product-item -->
-						</div> <!-- /.col-md-4 -->
+                        <h1 class="hero-title">
+                            <span class="title-line gradient-text">Transformamos</span>
+                            <span class="title-line gradient-text">Momentos</span>
+                            <span class="title-line gradient-text">em Memórias</span>
+                        </h1>
                         
-						<div class="col-md-4 col-sm-6">
-							<div class="product-item">
-								<img src="images/products/kit-premium.jpg" alt="Kit Premium">
-								<a href="#" class="product-title">Kit Premium</a>
-								<p>1 painel redondo 50cm com tema da festa</p>
-								<p>1 mini arco de balões</p>
-                                                                <p>1 jarro com flores</p>
-                                                                <p>1 boleira</p>
-								<p>4 bandejas</p>
-								<p>4 displays de mesa</p>
-								<p>1 mesa ripada 60cm x 80cm com balões</p>
-								<p>1 mesa para lembranças</p>
-								<p>1 tapete</p>
-								<br>
-								<p><strong>Entrega, montagem e devolução por conta do cliente</strong></p>
-							</div> <!-- /.product-item -->
-						</div> <!-- /.col-md-4 -->
-						<div class="col-md-4 col-sm-6">
-							<div class="product-item">
-								<img src="images/products/gostou.jpg" alt="Gostou">
-								<a href="#" class="product-title">Faça um orçamento</a>
-								<p>Acompanhe nossos contatos e redes sociais:</p>
-								<p>Whatsapp: (85) 98685-3750</p>
-								<p>Instagram: @glipearte</p>
-								<p>Email: glipearte@gmail.com</p>
+                        <p class="hero-description">
+                            Com mais de 2 anos de experiência, transformamos sua celebração em uma experiência única 
+                            e inesquecível com nossos kits de decoração personalizados e criativos.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#kits" class="btn btn-primary btn-3d btn-glow">
+                                <span class="btn-text">Explorar Kits</span>
+                                <span class="btn-icon">→</span>
+                                <span class="btn-particles"></span>
+                            </a>
+                            
+                            <a href="#gallery" class="btn btn-outline btn-3d">
+                                <span class="btn-text">Ver Galeria</span>
+                                <span class="btn-icon">📸</span>
+                            </a>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="stat-number" data-target="10">0</div>
+                                <div class="stat-label">Festa Decoradas</div>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="stat-number" data-target="50">0</div>
+                                <div class="stat-label">Clientes Felizes</div>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                                <div class="stat-number" data-target="2">0</div>
+                                <div class="stat-label">Anos de Experiência</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="hero-visual" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="floating-elements">
+                            <div class="float-element element-1"></div>
+                            <div class="float-element element-2"></div>
+                            <div class="float-element element-3"></div>
+                        </div>
+                        <div class="hero-image-container">
+                            <div class="hero-image-3d">
+                                <img src="imagens/festa.jpg" 
+                                     alt="Decoração de festa" class="hero-image">
+                                <div class="image-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-text">Role para explorar</div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-							</div> <!-- /.product-item -->
-						</div> <!-- /.col-md-4 -->
-					</div> <!-- /.row -->
-			</div> <!-- /.slide-item -->
-		</div> <!-- /.products -->
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <span class="badge-3d">🎨 Nossa Galeria</span>
+                </div>
+                <h2 class="section-title gradient-text">Momentos de Encanto</h2>
+                <p class="section-description">
+                    Cada festa é uma obra de arte única, feita com amor e dedicação
+                </p>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Gallery items will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="gallery-cta" data-aos="fade-up" data-aos-delay="200">
+                <a href="#" class="btn btn-primary btn-3d">
+                    <span class="btn-text">Ver Mais Fotos</span>
+                    <span class="btn-icon">📸</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-		<div class="content services" id="menu-3">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-9 col-sm-10">
-						<div class="inner-content">
-							<div class="toggle-content" id="tab1">
-								<h2 class="page-title">O que é Pegue e Monte</h2>
-								<p>O serviço Pegue e Monte é a solução ideal para quem deseja uma festa linda, prática e econômica.</p>
-<p)Você escolhe o kit de decoração, realiza o aluguel e recebe todas as peças prontas para montar no local do seu evento.</p>
-<p>Não é necessário contratar montador: tudo é pensado para que a montagem seja simples, rápida e intuitiva.</p>
+    <!-- Kits Section -->
+    <section id="kits" class="kits-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <span class="badge-3d">🎁 Nossos Kits</span>
+                </div>
+                <h2 class="section-title gradient-text">Kits para Todas as Ocasiões</h2>
+                <p class="section-description">
+                    Escolha o kit perfeito para tornar sua festa inesquecível
+                </p>
+            </div>
+            
+            <div class="kits-container">
+                <div class="row">
+                    <!-- Kit items will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-<p>Com nossos kits completos e temáticos, você ganha liberdade, economia e autonomia para criar um ambiente encantador, do seu jeito e no seu tempo.
-Depois da festa, é só desmontar e devolver as peças combinadas.</p>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-content">
+                        <div class="section-badge">
+                            <span class="badge-3d">💝 Nossa História</span>
+                        </div>
+                        
+                        <h2 class="section-title gradient-text">Mais que Decoração</h2>
+                        
+                        <p class="about-text">
+                            Fundada em 2014, a Glipearte nasceu da paixão por transformar momentos especiais 
+                            em memórias eternas. Com mais de 2 anos de experiência, nos tornamos referência 
+                            em decoração de festas e eventos no Ceará.
+                        </p>
+                        
+                        <div class="about-features">
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="feature-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Feito com Amor</h4>
+                                    <p>Cada detalhe é pensado com carinho e dedicação</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="feature-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Alta Qualidade</h4>
+                                    <p>Materiais premium e acabamento impecável</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="feature-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Criatividade</h4>
+                                    <p>Designs únicos e personalizados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-visual">
+                        <div class="about-image-3d">
+                            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Nossa equipe" class="about-image">
+                            <div class="image-glow"></div>
+                        </div>
+                        
+                        <div class="about-stats">
+                            <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="stat-number" data-target="10">0</div>
+                                <div class="stat-label">Festas Decoradas</div>
+                            </div>
+                            <div class="stat-card" data-aos="zoom-in" data-aos-delay="600">
+                                <div class="stat-number" data-target="100">0</div>
+                                <div class="stat-label">% Satisfação</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<p>✨ Mais praticidade, menos custos e muita beleza para o seu evento!</p>
-								
-							</div> <!-- /.toggle-content -->
-							<div class="toggle-content" id="tab2">
-								<h2 class="page-title">Como Funciona</h2>
-<ul>								<p>Como funciona o Pegue e Monte 🎈</p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <span class="badge-3d">📞 Entre em Contato</span>
+                </div>
+                <h2 class="section-title gradient-text">Vamos Criar Juntos</h2>
+                <p class="section-description">
+                    Entre em contato e transforme sua festa em um momento mágico
+                </p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Telefone</h4>
+                                <p>(85) 98685-3750</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>glipearte@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Localização</h4>
+                                <p>Cristo Redentor, Fortaleza, CE</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="100">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="200">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="300">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Seu Nome" required>
+                            <span class="form-focus"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Seu Email" required>
+                            <span class="form-focus"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Seu Telefone">
+                            <span class="form-focus"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" placeholder="Sua Mensagem" required></textarea>
+                            <span class="form-focus"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-3d btn-block">
+                            <span class="btn-text">Enviar Mensagem</span>
+                            <span class="btn-icon">📤</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<li>1️⃣ Escolha o kit</li>
-<li>Selecione o kit de decoração que mais combina com o seu evento. Temos opções completas e temáticas para diversas ocasiões.</li>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <h3>Glipearte</h3>
+                            <p>Transformando momentos em memórias</p>
+                        </div>
+                        
+                        <div class="footer-bottom">
+                            <p>&copy; 2026 Glipearte Pegue e Monte. Todos os direitos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<li>2️⃣ Faça o aluguel</li>
-<li>Entre em contato, confira a disponibilidade e reserve o kit para a data desejada.</li>
+    <!-- Back to Top -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
-<li>3️⃣ Pegue ou receba o material</li>
-<li>Você retira o kit ou recebe tudo organizado, com orientações simples para montagem.</li>
-
-<li>4️⃣ Monte do seu jeito</li>
-<li>A montagem é fácil, rápida e não precisa de profissional. Em poucos passos, sua festa ganha vida!</li>
-
-<li>5️⃣ Curta o momento</li>
-<li>Aproveite sua festa com uma decoração linda, prática e econômica.</li>
-
-<li>6️⃣ Desmonte e devolva</li>
-<li>Após o evento, é só desmontar e devolver as peças conforme combinado.</li>
-</ul>
-
-<p>✨ Pegue, monte, aproveite e devolva. Simples assim!</p>
-							</div> <!-- /.toggle-content -->
-							<div class="toggle-content" id="tab3">
-								<h2 class="page-title">Depoimentos</h2>
-								<p>O que nossos clientes dizem 💬✨</p>
-
-<p>⭐ “Simplesmente amei! O kit chegou completo, fácil de montar e deixou a festa linda. Praticidade total!”</p>
-<p>— Cliente satisfeita</p>
-
-<p>⭐ “Ótima experiência! Economizei, montei tudo com facilidade e o resultado ficou perfeito.”</p>
-<p>— Cliente feliz</p>
-
-<p>⭐ “Decoração linda e sem complicação. O Pegue e Monte realmente funciona e faz toda a diferença.”</p>
-<p>— Cliente encantado(a)</p>
-
-<p>⭐ “Atendimento excelente e kits maravilhosos. Recomendo para quem quer uma festa bonita sem estresse.”</p>
-<p>— Cliente que recomenda</p>
-
-<p>✨ A confiança dos nossos clientes é o que nos motiva a entregar sempre o melhor!</p>
-							</div> <!-- /.toggle-content -->
-						</div> <!-- /.inner-content -->
-					</div> <!-- /.col-md-9 -->
-					<div class="col-md-3 col-sm-2">
-						<div id="icons">
-							<ul class="tabs">
-								<li>
-									<a href="#tab1" class="icon-item">
-										<i class="fa fa-cogs"></i>
-										<span>Serviço Pegue e Monte</span>
-									</a> <!-- /.icon-item -->
-								</li>
-								<li>
-									<a href="#tab2" class="icon-item">
-										<i class="fa fa-leaf"></i>
-										<span>Como Funciona</span>
-									</a> <!-- /.icon-item -->
-								</li>
-								<li>
-									<a href="#tab3" class="icon-item">
-										<i class="fa fa-users"></i>
-										<span>Depoimentos</span>
-									</a> <!-- /.icon-item -->
-								</li>
-							</ul>
-						</div> <!-- /.icons -->
-					</div> <!-- /.col-md-3 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</div> <!-- /.services -->
-
-		<div class="content about" id="menu-4">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-9 col-sm-10">
-						<div class="about-us-content">
-							<div class="toggle-content" id="tab4">
-								<h2 class="page-title">Our History</h2>
-                                
-								<p><img src="images/products/product4.jpg" alt="product 4" class="img-responsive img_left">Vivamus eleifend vestibulum auctor. Nam ac leo sed nulla iaculis commodo sit amet a ligula. <a href="#">Proin consequat</a> magna nec sodales hendrerit. Nam commodo mi dolor, quis egestas lectus viverra eu. Cras accumsan ultrices turpis et lacinia. Sed non lobortis purus. Phasellus consequat, magna id rutrum lacinia, magna urna malesuada magna, ut fringilla odio sapien at nunc. <a href="#">Proin nisl purus</a>, semper at fermentum sit amet, vehicula eget dolor. Integer sodales vehicula magna mattis semper. Etiam pellentesque semper mi vitae tempus. Praesent ut metus sed lacus egestas blandit eget gravida enim. Ut rutrum suscipit velit sit amet tempor. Donec rutrum, lacus non blandit rhoncus, nisi orci tempus risus, non vehicula enim lacus et est. In non gravida metus. Duis augue mauris, ullamcorper quis blandit sit amet, laoreet sed dui.</p>
-								<ul>
-									<li>Cras quis nibh vitae ligula venenatis blandit ut eleifend nunc.</li>
-									<li>Morbi imperdiet mauris ut dolor pellentesque egestas.</li>
-									<li>Ut ultrices lorem quis tellus malesuada blandit.</li>
-									<li>Donec pharetra ante in sodales semper.</li>
-                                    <li>Nam vitae bibendum velit, eu fermentum dui.</li>
-								</ul>
-							</div> <!-- /.toggle-content -->
-							<div class="toggle-content" id="tab5">
-								<h2 class="page-title">Our Team</h2>
-								<p><img src="images/products/product2.jpg" alt="product 2" class="img-responsive img_right">Duis purus mauris, tincidunt at consectetur non, tristique sodales ligula. Cras congue cursus risus, nec tempus mi porta eget. Cras ante metus, aliquam tincidunt eros sed, dignissim hendrerit est. Phasellus fringilla sit amet dui eu convallis. Mauris tristique, metus eget auctor tempor, elit odio vehicula mi, ac placerat lectus augue eu arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eu porta urna, a commodo leo. <a href="#">Phasellus porttitor</a>, nisl vitae molestie euismod, magna lorem porta ante, eu commodo nisl orci ut nisi. Curabitur imperdiet, arcu vitae tincidunt viverra, velit elit aliquam metus, sed ultrices metus odio sed nunc.</p>
-                                <p>Etiam lectus tortor, lobortis eu mattis nec, eleifend a nunc. Quisque consequat lectus sed imperdiet vulputate. Vivamus tristique non elit eu faucibus. Nam et arcu vestibulum, bibendum risus vitae, gravida libero. Suspendisse sed lacus neque. Nullam arcu elit, luctus ut enim et, eleifend varius dui. Fusce sit amet convallis lacus. Quisque vel ultricies libero. Morbi at tempor nisi.</p>
-							</div> <!-- /.toggle-content -->
-							<div class="toggle-content" id="tab6">
-								<h2 class="page-title">Our Workspace</h2>
-								<p><img src="images/products/product6.jpg" alt="product 6" class="img-responsive img_left">Labore, libero itaque quisquam officiis earum. Eaque, facilis, quibusdam, ab, voluptates quaerat dignissimos totam nam consequuntur labore explicabo temporibus atque aliquid asperiores error impedit repudiandae est nemo omnis sequi quae eius quos repellat doloribus cumque nulla sunt maxime ducimus commodi animi placeat quo debitis earum illum numquam inventore aspernatur necessitatibus voluptatum delectus maiores laboriosam magni ex illo quod corporis hic consectetur odio suscipit fugit qui aperiam. Sequi, quos, nam quam debitis architecto doloribus rerum illum magnam culpa ex eius nobis ducimus aspernatur aliquid laborum deleniti distinctio temporibus quae.</p> 
-                                <p>Quisque consequat lectus sed imperdiet vulputate. <a href="#">Vivamus tristique</a> non elit eu faucibus. Nam et arcu vestibulum, bibendum risus vitae, gravida libero. Suspendisse sed lacus neque. Nullam arcu elit, luctus ut enim et, eleifend varius dui.</p>
-							</div> <!-- /.toggle-content -->
-						</div> <!-- /.inner-content -->
-					</div> <!-- /.col-md-9 -->
-					<div class="col-md-3 col-sm-2">
-						<div id="icons-about">
-							<ul class="tabs">
-								<li>
-									<a href="#tab4" class="icon-item">
-										<i class="fa fa-umbrella"></i>
-										<span>Our History</span>
-									</a> <!-- /.icon-item -->
-								</li>
-								<li>
-									<a href="#tab5" class="icon-item">
-										<i class="fa fa-camera"></i>
-										<span>Our Team</span>
-									</a> <!-- /.icon-item -->
-								</li>
-								<li>
-									<a href="#tab6" class="icon-item">
-										<i class="fa fa-coffee"></i>
-										<span>Our Workspace</span>
-									</a> <!-- /.icon-item -->
-								</li>
-							</ul>
-						</div> <!-- /.icons -->
-					</div> <!-- /.col-md-3 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</div> <!-- /.services -->
-
-		<div class="content contact" id="menu-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="widget-content">
-							<div class="page-title">Entre em Contato</div>
-							<div class="contact-form">
-								<fieldset>
-									<input id="name" type="text" name="name" placeholder="Nome" maxlength="40">
-								</fieldset>
-								<fieldset>
-									<input type="email" name="email" id="email" placeholder="Email" maxlength="30">
-								</fieldset>
-								<fieldset>
-									<input type="text" name="subject" id="subject" placeholder="Assunto" maxlength="60">
-								</fieldset>
-								<fieldset>
-									<textarea name="comments" id="comments" placeholder="Mensagem"></textarea>
-								</fieldset>
-								<fieldset>
-									<input type="submit" name="send" value="Enviar" id="submit" class="button">
-								</fieldset>
-							</div> <!-- /.contact-form -->
-						</div> <!-- /.inner-content -->
-					</div> <!-- /.col-md-6 -->
-					<div class="col-md-6">
-						<div class="widget-content">
-							<div class="page-title">Localização</div>
-
-							<div id="templatemo_map"></div>
-
-                            <div class="contact-information">
-                            	<div class="row">
-                            		<div class="col-md-6 col-sm-6">
-                            			<p>Cristo Redentor, Fortaleza, Ceará, Brasil</p>
-                            		</div> <!-- /.col-md-6 -->
-                            		<div class="col-md-6 col-sm-6 text-right">
-                            			<ul>
-                            				<li>Tel: (85) 98685-3750</li>
-                            				<li>Email: glipearte@gmail.com</li>
-                            			</ul>
-                            		</div> <!-- /.col-md-6 -->
-                            	</div> <!-- /.row -->
-                            </div> <!-- /.contact-information -->
-						</div> <!-- /.inner-content -->
-					</div> <!-- /.col-md-6 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</div> <!-- /.contact -->
-
-	</div> <!-- /#menu-container -->
-
-	<div id="templatemo_footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<p>Copyright &copy; 2026 Glipearte Pegue e Monte</p>
-				</div> <!-- /.col-md-12 -->
-			</div> <!-- /.row -->
-		</div> <!-- /.container -->
-	</div> <!-- /.templatemo_footer -->
-
-	<!-- Scripts -->
-	<script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/modernizr.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/tabs.js"></script>
-	<script src="js/jquery.lightbox.js"></script>
-	<script src="js/templatemo_custom.js"></script>
-	<!-- 
-    	Free Responsive Template by templatemo
-    	http://www.templatemo.com
-	-->
-    <!-- templatemo 397 concept -->
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/3d-components.js"></script>
+    <script src="js/interactions.js"></script>
 </body>
 </html>
